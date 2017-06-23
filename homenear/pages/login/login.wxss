@@ -1,0 +1,73 @@
+/*login.wxss*/
+Page{
+  height: 100%;
+  width: 100%;
+}
+.login_container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+.bg{
+  height: 100%;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  background: red;
+  align-content: center;
+}
+
+.logo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 25%;
+  align-self: center; 
+}
+
+.logo-tips {
+  background: gainsboro;
+  align-self: center;
+  color: orange;
+}
+
+.input {
+  display: block;
+  background: white;
+  margin-top: 100rpx;
+  padding-inline-start: 20rpx;
+  padding-inline-end: 20rpx;
+}
+
+.input-email {
+  display: flex;
+}
+
+.input-user {
+  background: #999;
+  margin: 10rpx;
+  height: 70rpx;
+}
+
+.input-user-tips {
+  background: green;
+  align-self: center;
+}
+
+.input-pwd {
+  background: #ff9000;
+  margin: 10rpx;
+  height: 70rpx;
+}
+
+.login_btn{
+  width: 80%;
+  margin-top: 50rpx;
+}
