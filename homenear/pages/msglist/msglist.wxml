@@ -1,0 +1,4 @@
+<!--msglist.wxml-->
+<template name="msglist">
+  <text>CopyRight{{date}}  PowerBy{{author}}</text>
+</template>

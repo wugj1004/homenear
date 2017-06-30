@@ -3,7 +3,9 @@
     "pages/login/login",
     "pages/main/main",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/msg/msg",
+    "pages/logs/logs",
+    "pages/msglist/msglist"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -20,13 +22,13 @@
         "pagePath": "pages/login/login",
         "iconPath": "image/customer_normal.png",
         "selectedIconPath": "image/customer_HL.png",
-        "text":"main"
+        "text": "main"
       },
       {
         "pagePath": "pages/logs/logs",
         "iconPath": "image/findhouse_normal.png",
         "selectedIconPath": "image/findhouse_HL.png",
-        "text":"log"
+        "text": "log"
       }
     ]
   }
