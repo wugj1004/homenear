@@ -4,13 +4,13 @@
   <!--logo-->
   <view class="logo">
     <image class="logo-avatar" src="../../image/ic_launcher.png"></image>
-    <text class="logo-tips">近邻</text>
+    <text class="logo-tips">好租</text>
   </view>
   <!--输入框-->
   <view class="input">
     <!--用户名-->
     <view class="input-email">
-      <input class="input-user" placeholder="邮箱" type="tex" />
+      <input class="input-user" placeholder="邮箱" type="text" />
       <lable class="input-user-tips">@haozu.com</lable>
     </view>
     <!--密码-->
