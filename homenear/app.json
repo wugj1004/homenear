@@ -4,8 +4,7 @@
     "pages/main/main",
     "pages/index/index",
     "pages/msg/msg",
-    "pages/logs/logs",
-    "pages/msglist/msglist"
+    "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -3,11 +3,12 @@
     {{itemName}}
   </view>
 </view>
-<import src="../msglist/msglist.wxml" />
-<scroll-view scroll-y="true" class="container discovery withtab" bindscrolltoupper="upper" bindscrolltolower="lower" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
-  <view class="ctnt0" hidden="{{currentNavtab==0 ? '' : true}}">
-    <template is="msglist" data="{{date:'2017',author:'wugj'}}" />
+<import src="../templates/verticaltable.wxml" />
+<view class="ctnt0" hidden="{{currentNavtab==0 ? '' : true}}">
+    <template is="verticaltable" data="{{date:'2017',author:'wugj'}}" />
   </view>
+
+<scroll-view scroll-y="true" class="container discovery withtab" bindscrolltoupper="upper" bindscrolltolower="lower" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
   <view class="ctnt1 placehold" hidden="{{currentNavtab==1 ? '' : true}}">
     <text>圆桌</text>
   </view>
