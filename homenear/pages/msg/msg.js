@@ -1,4 +1,4 @@
-var feedbackApi = require('../templates/showToast');//引入消息提醒暴露的接口 
+var feedbackApi = require('../templates/showToast.js');//引入消息提醒暴露的接口 
 Page({
 
   /**

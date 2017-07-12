@@ -1,7 +1,7 @@
 <!--showToast.wxml-->
 <template name="showToast">
   <!--<text>CopyRight{{date}}  PowerBy{{author}}</text>-->
-  <block wx:if="{{showToast.isShow? showToast.isShow: false}}">
+  <block wx:if="{{showToast.isShow? true: false}}">
     <view class="toast-bg" wx:if="{{showToast.mask==false? false : true}}"></view>
     <view class="toast-center">
       <view class="toast">

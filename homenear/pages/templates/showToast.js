@@ -53,6 +53,9 @@ function hideToast() {
     });
   }
 }
+/**
+ * 对外抛出showToast，hideToast
+ */
 module.exports = {
   showToast: showToast,
   hideToast: hideToast
