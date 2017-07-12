@@ -1,0 +1,7 @@
+<!--toast.wxml-->
+<button bindtap="testToast" data-test="1" style="margin-top: 10rpx;">只传title，单纯文字提醒</button> 
+<button bindtap="testToast" data-test="2" style="margin-top: 10rpx;">指定图标，图标+文字提醒</button>  
+<button bindtap="testToast" data-test="3" style="margin-top: 10rpx;">指定duration，控制toast 3s消失</button>  
+<button bindtap="testToast" data-test="31" style="margin-top: 10rpx;">指定duration=10s，手动2s后关闭toast</button>  
+<button bindtap="testToast" data-test="4" style="margin-top: 10rpx;">指定mask，控制toast遮罩</button>  
+<button bindtap="testToast" data-test="5" style="margin-top: 10rpx;">指定cb， 控制回调处理业务</button>

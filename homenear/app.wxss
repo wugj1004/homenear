@@ -1,4 +1,5 @@
 /**app.wxss**/
+@import 'pages/templates/showToast.wxss';
 .container {
   height: 100%;
   display: flex;

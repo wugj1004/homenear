@@ -1,16 +1,21 @@
+<import src="../templates/showToast.wxml" />
+<template is="showToast" data="{{showToast: showToast}}" />
+
+<!--tabBar-->
 <view class="top-tab flex-wrp flex-tab ">
   <view class="toptab flex-item {{currentNavtab==idx ? 'active' : ''}}" wx:for="{{navTab}}" wx:for-index="idx" wx:for-item="itemName" data-idx="{{idx}}" bindtap="switchTab">
     {{itemName}}
   </view>
 </view>
-<import src="../templates/verticaltable.wxml" />
-<view class="ctnt0" hidden="{{currentNavtab==0 ? '' : true}}">
-    <template is="verticaltable" data="{{date:'2017',author:'wugj'}}" />
-  </view>
 
+
+<!--plan.wxml数据在msg.js中定义；且wxss由msg.wxss定义-->
+<include src="../plan/plan.wxml" />
+
+<!--列表显示-->
 <scroll-view scroll-y="true" class="container discovery withtab" bindscrolltoupper="upper" bindscrolltolower="lower" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
   <view class="ctnt1 placehold" hidden="{{currentNavtab==1 ? '' : true}}">
-    <text>圆桌</text>
+    <include src="../toast/toast.wxml" />
   </view>
   <view class="ctnt2 placehold" hidden="{{currentNavtab==2 ? '' : true}}">
     <text>热门</text>

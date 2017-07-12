@@ -1,5 +1,0 @@
-<!--verticaltable.wxml-->
-<template name="verticaltable">
-  <text>CopyRight{{date}}  PowerBy{{author}}</text>
-
-</template>
