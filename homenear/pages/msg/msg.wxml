@@ -9,7 +9,6 @@
   </view>
 </view>
 
-
 <!--plan.wxml数据在msg.js中定义；且wxss由msg.wxss定义-->
 <include src="../plan/plan.wxml" />
 

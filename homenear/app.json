@@ -6,7 +6,8 @@
     "pages/logs/logs",
     "pages/msg/msg",
     "pages/plan/plan",
-    "pages/toast/toast"
+    "pages/toast/toast",
+    "pages/classfy/classfy"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -30,6 +31,12 @@
         "iconPath": "image/findhouse_normal.png",
         "selectedIconPath": "image/findhouse_HL.png",
         "text": "log"
+      },
+      {
+        "pagePath": "pages/classfy/classfy",
+        "iconPath": "image/workbench_normal.png",
+        "selectedIconPath": "image/workbench_HL.png",
+        "text": "classfy"
       }
     ]
   }
