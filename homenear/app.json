@@ -7,7 +7,9 @@
     "pages/msg/msg",
     "pages/plan/plan",
     "pages/toast/toast",
-    "pages/classfy/classfy"
+    "pages/classfy/classfy",
+    "pages/classfy/detail/detail",
+    "pages/classfy/list/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
