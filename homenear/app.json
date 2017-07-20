@@ -1,45 +1,37 @@
 {
   "pages": [
-    "pages/login/login",
-    "pages/main/main",
-    "pages/index/index",
-    "pages/logs/logs",
-    "pages/msg/msg",
-    "pages/plan/plan",
-    "pages/toast/toast",
-    "pages/classfy/classfy",
-    "pages/classfy/detail/detail",
-    "pages/classfy/list/index"
+    "pages/haozu/hz_plan/hz_plan",
+    "pages/haozu/hz_find/hz_find",
+    "pages/haozu/hz_myhouse/hz_myhouse",
+    "pages/haozu/hz_login/hz_login"
   ],
   "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "小程序",
+    "backgroundColor": "#eeeeee",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "enablePullDownRefresh": false
   },
   "tabBar": {
-    "color": "#ddd",
-    "backgroundColor": "white",
-    "borderStyle": "black",
     "list": [
       {
-        "pagePath": "pages/login/login",
+        "pagePath": "pages/haozu/hz_plan/hz_plan",
         "iconPath": "image/customer_normal.png",
         "selectedIconPath": "image/customer_HL.png",
-        "text": "main"
+        "text": "计划表"
       },
       {
-        "pagePath": "pages/logs/logs",
+        "pagePath":"pages/haozu/hz_find/hz_find",
         "iconPath": "image/findhouse_normal.png",
         "selectedIconPath": "image/findhouse_HL.png",
-        "text": "log"
+        "text": "找房"
       },
       {
-        "pagePath": "pages/classfy/classfy",
+        "pagePath": "pages/haozu/hz_myhouse/hz_myhouse",
         "iconPath": "image/workbench_normal.png",
         "selectedIconPath": "image/workbench_HL.png",
-        "text": "classfy"
-      }
-    ]
+        "text": "我的房源"
+      }]
   }
 }
