@@ -1,4 +1,6 @@
 // pages/haozu/hz_main/hz_plan.js
+var nodata = require('../template/nodata.js');
+
 Page({
 
   /**
@@ -12,9 +14,11 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.reLaunch({
-      url: '../hz_login/hz_login',
-    })
+    
+
+    // wx.navigateTo({
+    //   url: '../hz_login/hz_login',
+    // })
   },
 
   /**
@@ -28,7 +32,10 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+    nodata.showNoData({
+      title: 'test nodata title',
+      icon: '/image/ic_launcher.png'
+    });
   },
 
   /**

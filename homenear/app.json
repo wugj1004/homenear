@@ -1,6 +1,6 @@
 {
   "pages": [
-    "pages/haozu/hz_plan/hz_plan",
+    "pages/haozu/hz_plan/index",
     "pages/haozu/hz_find/hz_find",
     "pages/haozu/hz_myhouse/hz_myhouse",
     "pages/haozu/hz_login/hz_login"
@@ -16,7 +16,7 @@
   "tabBar": {
     "list": [
       {
-        "pagePath": "pages/haozu/hz_plan/hz_plan",
+        "pagePath": "pages/haozu/hz_plan/index",
         "iconPath": "image/customer_normal.png",
         "selectedIconPath": "image/customer_HL.png",
         "text": "计划表"
