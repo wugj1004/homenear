@@ -1,5 +1,6 @@
+// 逻辑层程序注册
 App({
-
+  globalData: 'I am global data',
   /**
    * 当小程序初始化完成时，会触发 onLaunch（全局只触发一次）
    */
@@ -26,5 +27,9 @@ App({
    */
   onError: function (msg) {
     
+  },
+
+  onPageNotFound: function (res){
+
   }
 })
