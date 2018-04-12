@@ -1,5 +1,0 @@
- <template name="nologin">
-    <block wx:if="{{showView.isShow? true: false}}">
-      <image src="/image/nodata.png"></image>
-    </block>
-</template> 

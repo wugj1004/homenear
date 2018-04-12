@@ -1,4 +1,0 @@
-<!--pages/haozu/hz_main/hz_plan.wxml-->
-<text>pages/haozu/hz_plan/index.wxml</text> 
-<!-- <import src="../template/nodata.wxml" />
-<template is="nologin" data="{{showView: showView}}"/> -->
