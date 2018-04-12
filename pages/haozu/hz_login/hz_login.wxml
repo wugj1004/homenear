@@ -1,0 +1,15 @@
+<!--pages/haozu/hz_login/hz_login.wxml-->
+<view class="container">
+  <view class="logo">
+    <image src="/image/ic_launcher.png" class="pic"> </image>
+    <text class="name">好租</text>
+  </view>
+
+  <view class="input">
+    <input class="name box" placeholder="邮箱" tye="text" value="{{user_name}}"/>
+    <label>@haozu.com</label>
+    <input class="pwd box" placeholder="密码" password="true" value="{{user_pwd}}"/>
+  </view>
+
+  <button class="login" bindtap="login" type="primary">登录</button>
+</view>
