@@ -55,6 +55,7 @@
 }
 
 .inlineview{
+  margin: 0 10rpx;
   margin-top: 50rpx;
   border: 1rpx solid red;
 }
@@ -66,3 +67,23 @@
   padding-left: 10rpx;
 }
 
+.boxview{
+  display: -webkit-box;
+  border: 1rpx solid red;
+  margin:0 auto;
+  margin-top: 50rpx;
+  height: 150rpx;
+  width: 700rpx;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+}
+
+.boxcell{
+  background: blue;
+  color: white;
+  display: block;
+  height: 100rpx;
+  text-align: center;
+  width:0%;
+}
