@@ -27,4 +27,10 @@
     <text class='boxcell' style="background:black;-webkit-box-flex:3;">This is box</text>
   </view>
 
+
+  <view class='floatview'>
+    <text class='floatcell' >{{float_text}}{{float_text}}1</text>
+    <text class='floatcell' style='background:red;float:left'>{{float_text}}2</text>
+    <text class='floatcell' style='background:black;;float:right'>{{float_text}}3</text>
+  </view>
 </view>

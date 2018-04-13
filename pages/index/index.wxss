@@ -87,3 +87,19 @@
   text-align: center;
   width:0%;
 }
+
+.floatview{
+  margin: 0 auto;
+  margin-top: 50rpx;
+  border: 1rpx solid red;
+  display: block;
+}
+.floatcell{
+  background: blue;
+  border: 1rpx solid white;
+  text-align: center;
+  color: white;
+  padding: 10rpx;
+  display: block;
+
+}

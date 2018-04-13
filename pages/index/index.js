@@ -7,7 +7,8 @@ Page({
    */
   data: {
     text: "This is page data.",
-    inline_text: "This is inline."
+    inline_text: "This is inline.",
+    float_text: "This is float."
   },
 
   /**
