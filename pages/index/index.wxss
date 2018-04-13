@@ -16,3 +16,53 @@
   align-items: center;
   justify-content: center;
 }
+
+.blockcell {
+  background: blue;
+  color: white;
+  display: block;
+  padding: 20rpx;
+  border: 1rpx solid red;
+  text-align: center;
+  width: 500rpx;
+  margin: 0 auto;
+  margin-top: 10rpx;
+}
+
+.blockview {
+  background: white;
+  border: 1rpx solid black;
+  margin-top: 20rpx;
+  display: block;
+
+}
+
+.inlineblockcell {
+  background: blue;
+  margin-left: 10rpx;
+  color: white;
+  padding: 10rpx;
+  display: inline-block;
+  width: 300rpx;
+  text-align: center;
+}
+
+.inlineblockview {
+  border: 1rpx solid red;
+  margin-top: 50rpx;
+  display: inline-block;
+  text-align: center;
+}
+
+.inlineview{
+  margin-top: 50rpx;
+  border: 1rpx solid red;
+}
+.inlinecell{
+  display: inline;
+  background: blue;
+  color: white;
+  margin-left: 10rpx;
+  padding-left: 10rpx;
+}
+

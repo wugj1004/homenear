@@ -6,7 +6,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    text: "This is page data."
+    text: "This is page data.",
+    inline_text: "This is inline."
   },
 
   /**

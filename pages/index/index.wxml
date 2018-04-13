@@ -2,4 +2,26 @@
 <view class='container-index'>
   <view bindtap="viewTap" class='clickbg'> click me Change Text</view>
   <text>{{text}}</text>
+
+  <text class='blockcell'>{{text}}</text>
+
+  <view class='blockview'>
+    <text class='blockcell'>打印{{text}}</text>
+    <text class='blockcell'>{{text}}</text>
+  </view>
+
+
+  <view class='inlineblockview'>
+    <text class='inlineblockcell'>{{inline_text}}</text>
+    <text class='inlineblockcell'>{{inline_text}}</text>
+  </view>
+
+  <view class='inlineview'>
+  <text class='inlinecell'>{{inline_text}}{{inline_text}}{{inline_text}}{{inline_text}}分割</text>
+  <text class='inlinecell'>{{inline_text}}</text>
+  
+  </view>
+
+
+
 </view>
