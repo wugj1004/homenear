@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/myxml/myxml"
   ],
   "window": {
     "navigationBarBackgroundColor": "blue",
@@ -20,7 +21,7 @@
         "text": "计划表"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/myxml/myxml",
         "iconPath": "image/findhouse_normal.png",
         "selectedIconPath": "image/findhouse_HL.png",
         "text": "找房"
