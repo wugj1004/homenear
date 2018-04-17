@@ -1,2 +1,3 @@
 <!--pages/mycompon/mycompon.wxml-->
 <text>pages/mycompon/mycompon.wxml</text>
+<component-tag-name inner-text="Some text"></component-tag-name>

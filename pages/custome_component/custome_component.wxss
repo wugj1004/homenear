@@ -1,0 +1,4 @@
+/* pages/custome_component/custome_component.wxss */
+.inner {
+  color: red;
+}
