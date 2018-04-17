@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/mycompon/mycompon",
     "pages/myxml/myxml",
     "pages/index/index",
     "pages/logs/logs"
@@ -28,7 +29,7 @@
         "text": "找房"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/mycompon/mycompon",
         "iconPath": "image/workbench_normal.png",
         "selectedIconPath": "image/workbench_HL.png",
         "text": "我的房源"
