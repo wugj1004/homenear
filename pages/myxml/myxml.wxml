@@ -48,32 +48,45 @@
     </view>
   </view>
 
-<text class='wxml-text'>模版定义查看</text>
+  <text class='wxml-text'>模版定义查看</text>
 
-<!--定义template-->
-<template name="odd">
-  <view> odd </view>
-</template>
-<template name="even">
-  <view> even </view>
-</template>
-<!--调用template-->
-<block wx:for="{{[1, 2, 3]}}">
-    <template is="{{item % 2 == 0 ? 'even' : 'odd'}}"/>
-</block>
-<!--定义template-->
-<template name="msgItem">
-  <view>
-    <text> {{index}}: {{msg}} </text>
-    <text> Time: {{time}} </text>
-  </view>
-</template>
-<!--调用template-->
-<template is="msgItem" data="{{...item}}"/>
+  <!--定义template-->
+  <template name="odd">
+    <view> odd </view>
+  </template>
+  <template name="even">
+    <view> even </view>
+  </template>
+  <!--调用template-->
+  <block wx:for="{{[1, 2, 3]}}">
+    <template is="{{item % 2 == 0 ? 'even' : 'odd'}}" />
+  </block>
+  <!--定义template-->
+  <template name="msgItem">
+    <view>
+      <text> {{index}}: {{msg}} </text>
+      <text> Time: {{time}} </text>
+    </view>
+  </template>
+  <!--调用template-->
+  <template is="msgItem" data="{{...item}}" />
 
 
-<text class='wxml-text'>绑定事件</text>
-<view id="tapTest" data-hi="WeChat" bindtap="tapName"> {{bindClick}} </view>
+  <text class='wxml-text'>绑定事件</text>
+  <view id="tapTest" data-hi="WeChat" bindtap="tapName"> {{bindClick}} </view>
 
+
+  <text class='wxml-text'>引入wxs</text>
+  <wxs module="mywxs">
+    var foo = "'hello world' from comm.wxs";
+    var bar = function(d) {
+      return d;
+    }
+    module.exports = {
+      FOO: foo,
+      bar: bar
+    };
+  </wxs>
+  <view>{{mywxs.FOO}}、{{mywxs.bar("aa"+mywxs.FOO+"bb")}}</view>
 
 </view>
