@@ -6,7 +6,7 @@
   <text class='blockcell'>{{text}}</text>
 
   <view class='blockview'>
-    <text class='blockcell'>打印{{text}}</text>
+    <text bindtap="viewTap" class='blockcell'>打印{{text}}</text>
     <text class='blockcell'>{{text}}</text>
   </view>
 

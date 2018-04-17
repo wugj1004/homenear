@@ -62,5 +62,23 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+
+  click: function (){
+    wx.showToast({
+      title: '成功',
+      icon: 'success',
+      duration: 2000
+    })
+  },
+
+  onMyEvent: function (e) {
+    e.detail // 自定义组件触发事件时提供的detail对象
+    wx.showToast({
+      title: '成功',
+      icon: 'success',
+      duration: 2000
+    })
   }
+
 })
