@@ -1,4 +1,4 @@
-<!--showToast.wxml-->
+<!--showToast.wxml 定义模版 -->
 <template name="showToast">
   <!--<text>CopyRight{{date}}  PowerBy{{author}}</text>-->
   <block wx:if="{{showToast.isShow? true: false}}">

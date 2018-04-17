@@ -1,1 +1,22 @@
 /* pages/myxml/myxml.wxss */
+
+.container-wxml {
+  flex: 1;
+  border: 1rpx solid blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wxml-text{
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  border: 1rpx solid white;
+  height: 50rpx;
+  background:red;
+  color:white;
+  margin-top:50rpx;
+
+}

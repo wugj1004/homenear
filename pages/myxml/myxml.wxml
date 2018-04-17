@@ -1,2 +1,79 @@
 <!--pages/myxml/myxml.wxml-->
-<text>pages/myxml/myxml.wxml</text>
+<view class='container-wxml'>
+  <text>单独的数据绑定{{message}}</text>
+
+  <view style='margin-top:50rpx;'>
+    <text style='background:red; color:white' class='wxml-text'>测试关键字使用</text>
+    <checkbox checked="{{true}}"> </checkbox>
+    <checkbox checked="{{false}}"> </checkbox>
+  </view>
+
+  <view style='margin-top:50rpx;'>
+    <text style='background:red; color:white' class='wxml-text'>进行简单的运算</text>
+    <view hidden='{{flag ? true : false}}'>Hidden</view>
+    <view> {{a + b}} + {{c}} + d </view>
+    <view>{{objecttest.key}} {{array[0]}}</view>
+
+  </view>
+
+
+  <text class='wxml-text'>block条件渲染</text>
+  <block wx:if="{{condition}}">
+    <view>
+      <text>{{message}}</text>
+      <text>{{message}}</text>
+    </view>
+    <text>{{message}}</text>
+  </block>
+
+  <text class='wxml-text'>线性条件渲染</text>
+  <view wx:if="{{length > 5}}"> 5 </view>
+  <view wx:elif="{{length < 2}}"> 2 </view>
+  <view wx:else> 3 </view>
+
+  <text class='wxml-text'>循环渲染</text>
+  <view wx:for="{{array}}">
+    {{index}}: {{item.message}}
+  </view>
+
+  <view wx:for="{{array}}" wx:for-index="idx" wx:for-item="itemName">
+    {{idx}}: {{itemName.message}}
+  </view>
+
+  <view wx:for="{{[1, 2]}}" wx:for-item="i">
+    <view wx:for="{{[1, 2]}}" wx:for-item="j">
+      <view wx:if="{{i <= j}}">
+        {{i}} * {{j}} = {{i * j}}
+      </view>
+    </view>
+  </view>
+
+<text class='wxml-text'>模版定义查看</text>
+
+<!--定义template-->
+<template name="odd">
+  <view> odd </view>
+</template>
+<template name="even">
+  <view> even </view>
+</template>
+<!--调用template-->
+<block wx:for="{{[1, 2, 3]}}">
+    <template is="{{item % 2 == 0 ? 'even' : 'odd'}}"/>
+</block>
+<!--定义template-->
+<template name="msgItem">
+  <view>
+    <text> {{index}}: {{msg}} </text>
+    <text> Time: {{time}} </text>
+  </view>
+</template>
+<!--调用template-->
+<template is="msgItem" data="{{...item}}"/>
+
+
+<text class='wxml-text'>绑定事件</text>
+<view id="tapTest" data-hi="WeChat" bindtap="tapName"> {{bindClick}} </view>
+
+
+</view>

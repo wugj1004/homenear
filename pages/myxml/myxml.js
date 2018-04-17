@@ -5,7 +5,35 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    message:"wxs 条件渲染案例",
+    condition:true,
+    length:1,
+    flag:false,
+
+    a: 1,
+    b: 2,
+    c: 3,
+
+    objecttest: {
+      key: 'Hello '
+    },
+    array: ['MINA'],
+
+    array: [{
+      message: 'foo',
+    }, {
+      message: 'bar'
+    }],
+
+    item: {
+      index: 0,
+      msg: 'this is a template',
+      time: '2016-09-15'
+    },
+
+
+    bindClick:'Click me!',
+
   },
 
   /**
@@ -62,5 +90,12 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+
+  tapName: function (event){
+    console.log('绑定事件')
+    this.setData({
+      bindClick:'修改绑定事件文案'
+    })
   }
 })

@@ -1,8 +1,9 @@
 {
   "pages": [
+    "pages/myxml/myxml",
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/myxml/myxml"
+    "pages/logs/logs"
+    
   ],
   "window": {
     "navigationBarBackgroundColor": "blue",
