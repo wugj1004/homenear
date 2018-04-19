@@ -1,8 +1,8 @@
 {
   "pages": [
-    "pages/mycompon/mycompon",
-    "pages/myxml/myxml",
-    "pages/index/index",
+    "pages/a/a",
+    "pages/c/c",
+    "pages/b/b",
     "pages/logs/logs"
     
   ],
@@ -17,19 +17,19 @@
   "tabBar": {
     "list": [
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/a/a",
         "iconPath": "image/customer_normal.png",
         "selectedIconPath": "image/customer_HL.png",
         "text": "计划表"
       },
       {
-        "pagePath": "pages/myxml/myxml",
+        "pagePath": "pages/b/b",
         "iconPath": "image/findhouse_normal.png",
         "selectedIconPath": "image/findhouse_HL.png",
         "text": "找房"
       },
       {
-        "pagePath": "pages/mycompon/mycompon",
+        "pagePath": "pages/c/c",
         "iconPath": "image/workbench_normal.png",
         "selectedIconPath": "image/workbench_HL.png",
         "text": "我的房源"
