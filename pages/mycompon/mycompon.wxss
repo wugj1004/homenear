@@ -1,1 +1,4 @@
 /* pages/mycompon/mycompon.wxss */
+.red-text{
+color: red;
+}

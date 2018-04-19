@@ -1,9 +1,12 @@
 <!--pages/mycompon/mycompon.wxml-->
 <text>pages/mycompon/mycompon.wxml</text>
 
-<component-tag-name inner-text="Some text" bindmyevent="onMyEvent">
+<!--bindmyevent自定义事件事件绑定-->
+<!--自定义组件中传入my-class样式-->
+<component-tag-name inner-text="Some text" bindmyevent="onMyEvent" my-class="red-text">
  <view bindtap="click" >这里是插入到组件slot中的内容</view>
  <view slot="before">这里是插入到组件slot name="before"中的内容</view>
  <view slot="after">这里是插入到组件slot name="after"中的内容</view>
+
 </component-tag-name>
 
