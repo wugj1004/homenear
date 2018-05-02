@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/a/a",
     "pages/c/c",
+    "pages/a/a",
     "pages/b/b",
     "pages/logs/logs"
     
@@ -40,5 +40,6 @@
     "request": 10000,
     "downloadFile": 10000
   },
-  "debug": true
+  "debug": true,
+  "workers": "workers"
 }

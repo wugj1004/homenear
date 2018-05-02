@@ -1,6 +1,6 @@
 {
   "usingComponents": {
-    "component-tag-name": "../custome_component/custome_component",
+    "component-tag-group": "../custome_component/custome_component",
     "custom_radio": "../custome_component/custom_radio"
   }
 }

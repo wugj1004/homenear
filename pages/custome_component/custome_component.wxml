@@ -10,12 +10,12 @@
 <!--使用外部导入的样式-->
 <button bindtap="onTap" class="my-class">点击触发“myevent”事件，导入外部样式</button>
 
-
-<view wx:for="{{[1,2,3]}}">
-  <label>
+<!--抽象节点使用-->
+<view wx:for="{{[1,2,3]}}" wx:key="*this">
+  <lable>
     <selectable disabled="{{false}}"></selectable>
     {{item}}
-  </label>
+  </lable>
 </view>
 
 <view>这里是组件的内部节点-----------</view>
