@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/view/index",
     "pages/c/c",
     "pages/a/a",
     "pages/b/b",
@@ -16,6 +17,12 @@
   },
   "tabBar": {
     "list": [
+      {
+        "pagePath": "pages/view/index",
+        "iconPath": "image/customer_normal.png",
+        "selectedIconPath": "image/customer_HL.png",
+        "text": "界面"
+      },
       {
         "pagePath": "pages/a/a",
         "iconPath": "image/customer_normal.png",
