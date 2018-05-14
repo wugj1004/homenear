@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    dataList:[""]
+    dataList:[""],
+    phone_message:"18544010202"
   },
 
   /**

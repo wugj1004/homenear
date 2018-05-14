@@ -1,1 +1,237 @@
 /* pages/view/index.wxss */
+
+.banner {
+  background: '#ffffff';
+  position: relative;
+}
+
+.banner image {
+  height: 500rpx;
+  width: 100%;
+  display: block;
+}
+
+.index_logo {
+  position: absolute;
+  left: 20rpx;
+  top: 28rpx;
+  width: 132rpx;
+  height: 57rpx;
+}
+
+.index_logo image {
+  width: 132rpx;
+  height: 57rpx;
+}
+
+.index_phone {
+  position: absolute;
+  right: 20rpx;
+  top: 48rpx;
+  color: #dcdcdc;
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size: 30rpx;
+  font-family: 'Georgia';
+}
+
+.index_phone image {
+  width: 24rpx;
+  height: 26rpx;
+  display: inline-block;
+  margin: 0 10rpx;
+  vertical-align: middle;
+}
+
+.seachBox {
+  position: absolute;
+  width: 684rpx;
+  height: 80rpx;
+  left: 33rpx;
+  bottom: 57rpx;
+  background: #fff;
+  border-radius: 5rpx;
+}
+
+.selectCity {
+  width: 142rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 24rpx;
+  color: #666;
+  text-align: center;
+  float: left;
+}
+
+.selectCity_icon::after {
+  width: 12rpx;
+  height: 12rpx;
+  display: inline-block;
+  border-bottom: 1rpx solid #999;
+  border-right: 1rpx solid #999;
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  vertical-align: 5rpx;
+  margin: 0 0 0 10rpx;
+  content: "";
+}
+
+.selectCity_line {
+  margin: 0 0 0 14rpx;
+  color: #666;
+}
+
+.iptHeader {
+  height: 80rpx;
+  width: 542rpx;
+  float: left;
+}
+
+.iptHeader image {
+  width: 28rpx;
+  height: 26rpx;
+  display: inline-block;
+  margin: 27rpx 0 0 10rpx;
+  vertical-align: top;
+}
+
+.iptHeader input {
+  display: inline-block;
+  height: 80rpx;
+  width: 464rpx;
+  line-height: 80rpx;
+  border: 0;
+  font-size: 24rpx;
+  padding: 0 10rpx;
+}
+
+.navList {
+  display: block;
+  background: #fff;
+  padding: 40rpx 0 30rpx;
+}
+
+.navList navigator {
+  width: 33%;
+  display: inline-block;
+  text-align: center;
+}
+
+.navList image {
+  height: 100rpx;
+  width: 100rpx;
+  margin: 0 auto;
+  display: block;
+}
+
+.navList text {
+  font-size: 24rpx;
+  color: #666;
+  line-height: 36rpx;
+  display: block;
+  width: 100%;
+  padding-top: 10rpx;
+}
+
+.spaceComm {
+  background: #f5f6fb;
+  height: 20rpx;
+}
+
+.entrustWrap {
+  padding: 20rpx;
+  background: #fff;
+  height: 88rpx;
+}
+
+.entrustForm {
+  background: #f5f6fb;
+  padding: 7rpx 7rpx 7rpx 0;
+  height: 74rpx;
+  border-radius: 5rpx;
+  font-size: 0;
+  position: relative;
+}
+
+.entrustWrap input {
+  font-size: 24rpx;
+  width: 470rpx;
+  height: 74rpx;
+  line-height: 74rpx;
+  padding: 0 24rpx;
+  float: left;
+}
+
+.btSubEntrust {
+  width: 180rpx;
+  height: 74rpx;
+  line-height: 74rpx;
+  text-align: center;
+  background: #ffcc5e;
+  font-size: 28rpx;
+  color: #fff;
+  border-radius: 10rpx;
+  border: 0 solid white;
+}
+
+.topCore {
+  padding: 5rpx 30rpx 0;
+  height: 100rpx;
+  width: 100%;
+  line-height: 100rpx;
+  font-size: 34rpx;
+  color: #666;
+}
+
+.listbox:first-child {
+  padding-top: 0rpx;
+}
+
+.listbox {
+  padding: 40rpx 30rpx;
+}
+
+.listLeft {
+  width: 216rpx;
+  height: 162rpx;
+  background: blue;
+  float: left;
+}
+
+.listLeft image{
+  width: 216rpx;
+  height: 162rpx;
+}
+
+.listRight{
+  float: left;
+  height: 162rpx;
+  padding-left:20rpx;
+  width:454rpx;
+
+}
+.listProRight_title{
+  font-size:28rpx;
+  color:#333;
+  height:42rpx;
+  line-height:42rpx;
+  width:474rpx;
+  display:block;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  padding-bottom:5rpx;
+  font-weight:bold;
+
+}
+.listProRight_about{
+  display: block;
+  line-height:42rpx;
+  color:#999;
+  font-size:24rpx;
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+
+}

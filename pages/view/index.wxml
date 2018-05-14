@@ -1,2 +1,73 @@
 <!--pages/view/index.wxml-->
-<text>pages/view/index.wxml</text>
+<view class='banner'>
+  <image src='../../image/home_page.png'></image>
+  <navigator class='index_logo'>
+    <image src='../../image/haozu_logo.png'></image>
+  </navigator>
+
+  <view class='index_phone'>
+    <image src='../../image/phone_icon.png' background-size='cover'></image>
+    <text>{{phone_message}}</text>
+  </view>
+
+
+  <view class='seachBox'>
+    <navigator class='selectCity'>
+      <text class='selectCity_icon'>北京</text>
+      <text class='selectCity_line'>|</text>
+    </navigator>
+
+    <navigator class='iptHeader' hover-class='none'>
+      <image src='../../image/search_icon.png' background-size='cover'></image>
+      <input value='' type='text' disabled='disabled' placeholder=" 输入您想找的区域/商圈或者写字楼名称"></input>
+    </navigator>
+  </view>
+</view>
+
+<view class="navList">
+  <navigator hover-class="none">
+    <image src="../../image/rent_icon.png" background-size="cover"></image>
+    <text>写字楼出租</text>
+  </navigator>
+
+  <navigator hover-class="none">
+    <image src="../../image/share_icon.png" background-size="cover"></image>
+    <text>共享办公</text>
+  </navigator>
+
+  <navigator hover-class="none">
+    <image src="../../image/creativity_icon.png" background-size="cover"></image>
+    <text>创意园区</text>
+  </navigator>
+</view>
+
+<view class="spaceComm"></view>
+<view class='entrustWrap'>
+  <view class='entrustForm' hover-class='none'>
+    <input type="number" placeholder='输入手机号码，免费委托找房'>
+    </input>
+    <button class='btSubEntrust'>立即预约</button>
+  </view>
+
+</view>
+<view class="spaceComm"></view>
+
+<view class="coreWrap">
+<text class='topCore'>推荐房源</text>
+
+<view class='listPro'>
+<navigator class='listbox' >
+  <view class='listLeft'>
+    <image src='../../image/icon.png'></image>
+  </view>
+  <view class='listRight'>
+  <text class='listProRight_title'>新华科技大厦</text>
+  <text class='listProRight_about'>11-11</text>
+  <text class='listProRight_about'>朝阳-酒仙桥</text>
+  <text class='listProRight_about'>距离 14号线东风北桥124米</text>
+  
+  </view>
+</navigator>
+</view>
+
+</view>
