@@ -87,6 +87,9 @@ Page({
     this.setData({
       currentFilter: "-1"
     })
-  }
+  },
 
+  emptyFun:function(e){
+    
+  }
 })

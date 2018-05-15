@@ -17,7 +17,7 @@
 <!-- 位置筛选 -->
 <view class='ul01 {{currentFilter == 0 ? "show" : "hidden"}}' bindtap='hiddenPop'>
   <!-- 主体内容层 -->
-  <view class="filterCon">
+  <view class="filterCon" catchtap='emptyFun'>
     <!-- 头部切换 -->
     <view class="filterPosTop">
       <!-- 切换按钮 -->
