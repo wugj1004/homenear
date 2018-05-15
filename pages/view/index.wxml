@@ -25,7 +25,7 @@
 </view>
 
 <view class="navList">
-  <navigator hover-class="none">
+  <navigator hover-class="navigator-hover" url='building' open-type='navigate'>
     <image src="../../image/rent_icon.png" background-size="cover"></image>
     <text>写字楼出租</text>
   </navigator>
@@ -53,21 +53,22 @@
 <view class="spaceComm"></view>
 
 <view class="coreWrap">
-<text class='topCore'>推荐房源</text>
+  <view>
+    <text class='topCore'>推荐房源</text>
+  </view>
 
-<view class='listPro'>
-<navigator class='listbox' >
-  <view class='listLeft'>
-    <image src='../../image/icon.png'></image>
+  <view class='listPro' hover-class='none'>
+    <navigator class='listbox'>
+      <view class='listLeft'>
+        <image src='../../image/icon.png'></image>
+      </view>
+      <view class='listRight'>
+        <text class='listProRight_title'>新华科技大厦</text>
+        <text class='listProRight_about'>11-11</text>
+        <text class='listProRight_about'>朝阳-酒仙桥</text>
+        <text class='listProRight_about'>距离 14号线东风北桥124米</text>
+      </view>
+    </navigator>
   </view>
-  <view class='listRight'>
-  <text class='listProRight_title'>新华科技大厦</text>
-  <text class='listProRight_about'>11-11</text>
-  <text class='listProRight_about'>朝阳-酒仙桥</text>
-  <text class='listProRight_about'>距离 14号线东风北桥124米</text>
-  
-  </view>
-</navigator>
-</view>
 
 </view>

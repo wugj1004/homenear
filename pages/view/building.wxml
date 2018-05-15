@@ -1,0 +1,32 @@
+<!--pages/view/building.wxml-->
+<!-- 搜索 -->
+<navigator class="topSearch" hover-class="none">
+  <view class="seachBox">
+    <image src='../../image/search_icon.png'></image>
+    <input disabled='disabled' value='' type='text' placeholder='输入您想找的区域/商圈或者写字楼名称'></input>
+  </view>
+</navigator>
+<!-- 筛选 -->
+<view class="filterWrap" bindtap='switchFilter'>
+  <view class='tab-item ' data-val="0">位置</view>
+  <view class='tab-item ' data-val="1">面积</view>
+  <view class='tab-item ' data-val="2">价格</view>
+  <view class='tab-item ' data-val="3">更多</view>
+</view>
+
+<!-- 位置筛选 -->
+<view class='ul01 {{currentFilter == 0 ? "show" : "hidden"}}' bindtap='hiddenPop'>
+  <!-- 主体内容层 -->
+  <view class="filterCon">
+    <!-- 头部切换 -->
+    <view class="filterPosTop">
+      <!-- 切换按钮 -->
+      <view class='SLtab' bindtap='switchBtn'>
+        <view class='{{currentSLTab == 0 ? "active" : "" }}' data-id='0'>商圈</view>
+        <view class='{{currentSLTab == 1 ? "active" : "" }}' data-id='1'>地铁</view>
+      </view>
+    </view>
+    <!-- 列表内容 -->
+    <view></view>
+  </view>
+</view>

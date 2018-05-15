@@ -1,0 +1,149 @@
+/* pages/view/building.wxss */
+
+.topSearch {
+  background: #efeff4;
+  padding: 15rpx;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 56rpx;
+  width: 722rpx;
+  z-index: 1;
+}
+
+.seachBox {
+  border-radius: 3rpx;
+  border: 1rpx #e2e2e2 solid;
+  background: white;
+  height: 54rpx;
+  font-size: 0;
+  padding: 0 15rpx;
+}
+
+.seachBox image {
+  display: inline-block;
+  width: 28rpx;
+  height: 26rpx;
+  vertical-align: top;
+  margin-top: 14rpx;
+}
+
+.seachBox input {
+  display: inline-block;
+  width: 500rpx;
+  margin-left: 10rpx;
+  height: 54rpx;
+  line-height: 54rpx;
+  font-size: 24rpx;
+  color: #666;
+}
+
+.filterWrap {
+  display: flex;
+  display: -webkit-flex;
+  height: 82rpx;
+  background: white;
+  flex-direction: row;
+  position: fixed;
+  left: 0;
+  top: 82rpx;
+  width: 100%;
+  border-bottom: 1rpx #e2e2e2 solid;
+}
+
+.tab-item {
+  text-align: center;
+  line-height: 82rpx;
+  height: 82rpx;
+  font-size: 24rpx;
+  color: #666;
+  flex-grow: 1;
+}
+
+.tab-item::after {
+  display: inline-block;
+  /* 定义直角 */
+  width: 12rpx;
+  height: 12rpx;
+  border-bottom: 1rpx solid #999;
+  border-right: 1rpx solid #999;
+  /* 旋转45度 */
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  vertical-align: 5rpx;
+  margin: 0 0 0 10rpx;
+  content: "";
+}
+
+.ul01 {
+  position: fixed;
+  left: 0;
+  top: 164rpx;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  transition: all 2s;
+ visibility: hidden; 
+}
+
+.ul01.show{
+  visibility: visible
+}
+
+.ul01.hidden{
+  visibility: hidden
+}
+
+.filterCon {
+  height: 65%;
+  width: 100%;
+  background: white;
+}
+
+.filterPosTop {
+  padding: 40rpx 0 30rpx;
+  text-align: center;
+  background: #f9f9f9;
+  font-size: 0;
+  border-top: 1rpx #f1f1f1 solid;
+}
+
+.SLTab {
+  width: 400rpx;
+  height: 70rpx;
+  margin: 0 auto;
+  background: white;
+}
+.SLtab view{
+  display: inline-block;
+  width: 200rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 24rpx;
+  background: #fff;
+  color: #666;
+  vertical-align: top;
+  clear: both;
+}
+.SLtab view:first-child{
+  border-top-left-radius: 10rpx;
+  border-bottom-left-radius: 10rpx;
+}
+
+.SLtab view:first-child::after{
+  content: '|';
+  float: right;
+}
+
+.SLtab view:last-child{
+  border-top-right-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+
+}
+
+.SLtab view.active{
+  color: white;
+  background: #f90
+}

@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/view/building",
     "pages/view/index",
     "pages/c/c",
     "pages/a/a",
