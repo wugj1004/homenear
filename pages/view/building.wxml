@@ -8,14 +8,14 @@
 </navigator>
 <!-- 筛选 -->
 <view class="filterWrap" bindtap='switchFilter'>
-  <view class='tab-item ' data-val="0">位置</view>
-  <view class='tab-item ' data-val="1">面积</view>
-  <view class='tab-item ' data-val="2">价格</view>
-  <view class='tab-item ' data-val="3">更多</view>
+  <view class='tab-item {{currentFilter == 0 ? "cur" : "default"}}' data-val="0">位置</view>
+  <view class='tab-item {{currentFilter == 1 ? "cur" : "default"}}' data-val="1">面积</view>
+  <view class='tab-item {{currentFilter == 2 ? "cur" : "default"}}' data-val="2">价格</view>
+  <view class='tab-item {{currentFilter == 3 ? "cur" : "default"}}' data-val="3">更多</view>
 </view>
 
 <!-- 位置筛选 -->
-<view class='ul01 {{currentFilter == 0 ? "show" : "hidden"}}' bindtap='hiddenPop'>
+<view class='ul01 filterMask {{currentFilter == 0 ? "show" : "hidden"}}' bindtap='hiddenPop'>
   <!-- 主体内容层 -->
   <view class="filterCon" catchtap='emptyFun'>
     <!-- 头部切换 -->
@@ -26,7 +26,25 @@
         <view class='{{currentSLTab == 1 ? "active" : "" }}' data-id='1'>地铁</view>
       </view>
     </view>
-    <!-- 列表内容 -->
-    <view></view>
+    <!-- 商圈列表内容 -->
+    <view class='filterPoiList' wx:if="{{currentSLTab == 0}}">
+
+      <view class='poiLeft'>
+        <view class="{{curDistrictId == itemDis.district_id ? 'active' : ''}}" wx:for="{{district}}" wx:for-index="idDis" wx:for-item="itemDis" wx:key="district_id" data-district-id='{{itemDis.district_id}}' bindtap='clickItem'>
+          {{itemDis.name}}
+        </view>
+      </view>
+
+      <view class='poiRight'>
+        <view wx:for="{{streat}}" wx:for-item="item" wx:key="id" data-id='{{item.id}}'>
+          {{item.name}}
+        </view>
+      </view>
+    </view>
+    <!-- 地铁列表内容 -->
+    <view class='filterSubwayList' wx:if="{{currentSLTab == 1}}">
+      <view class='subLeft'>地铁01</view>
+      <view class='subRight'>地铁02</view>
+    </view>
   </view>
 </view>

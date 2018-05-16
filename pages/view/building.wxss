@@ -71,10 +71,26 @@
   -moz-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
-  vertical-align: 5rpx;
+  vertical-align: 6rpx;
   margin: 0 0 0 10rpx;
   content: "";
 }
+
+.tab-item.cur{
+  background: #ddd;
+  color: #f90;
+}
+.tab-item.cur::after{
+    /* 旋转45度 */
+  -moz-transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+  transform: rotate(225deg);
+  vertical-align: -3rpx;
+  transition: all .5s;
+  border-color: #f90;
+
+}
+
 
 .ul01 {
   position: fixed;
@@ -88,16 +104,16 @@
  visibility: hidden; 
 }
 
-.ul01.show{
-  visibility: visible
+.filterMask.show{
+  visibility: visible;
 }
 
-.ul01.hidden{
-  visibility: hidden
+.filterMask.hidden{
+  visibility: hidden;
+  display: none
 }
 
 .filterCon {
-  height: 65%;
   width: 100%;
   background: white;
 }
@@ -146,4 +162,40 @@
 .SLtab view.active{
   color: white;
   background: #f90
+}
+
+.filterPoiList{
+  overflow:hidden;
+  max-height: 600rpx; 
+}
+.poiLeft{
+  float: left;
+  
+  background:#f9f9f9;
+  height: 600rpx;
+  width: 375rpx;
+  overflow-y:auto;
+  overflow-x:hidden;
+}
+
+.poiRight view,
+.poiLeft view{
+  height:85rpx;
+  line-height:85rpx;
+  padding-left:40rpx;
+  font-size:28rpx;
+  color:#666;
+  border-right:1rpx #f1f1f1 solid;
+}
+
+.poiLeft view.active{
+  background: white;
+  color: #f90;
+  border-right:0rpx;
+}
+
+.poiRight{
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 600rpx;
 }
